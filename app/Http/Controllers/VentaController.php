@@ -24,10 +24,10 @@ class VentaController extends Controller
             return ['SUCCESS' => false, 'ERROR' => 'La venta no pudo ser guardada']; 
         }
 
-        return [ 'SUCCESS' => true ];
         //Amplicamos regla de negocio puntos+=10
         ComercioController::aumentarPuntaje($venta);
         
+        return [ 'SUCCESS' => true ];
     }
     
     public function show($id)
@@ -59,9 +59,9 @@ class VentaController extends Controller
             return ['SUCCESS' => false, 'ERROR' => 'La venta no se pudo eliminar']; 
         }
         
-        return ['SUCCESS' => true ];
         //Amplicamos regla de negocio puntos-=10
         ComercioController::disminuirPuntaje($venta);
-            
+        
+        return ['SUCCESS' => true ];
     }
 }
