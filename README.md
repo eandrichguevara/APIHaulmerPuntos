@@ -22,7 +22,9 @@
         </ul>
     </li>
     <li><strong> php artisan key:generate</strong></li>
-    <li><strong> pphp artisan migrate</strong></li>
-    <li><strong> pphp artisan db:seed</strong></li>
-    <li><strong> pphp artisan serve</strong></li>
+    <li><strong> php artisan migrate</strong></li>
+    <li><strong> php artisan db:seed</strong></li>
+    <li><strong> php artisan serve</strong></li>
 </ul>
+
+<h2>Importar la collecion APIHaulmerPuntos.postman_collection ubicada en la raiz del proyecto</h2>

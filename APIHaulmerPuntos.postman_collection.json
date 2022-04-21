@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "63da331d-5e39-47d6-815e-ebe4ac121361",
+		"name": "APIHaulmerPuntos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/api/comercio",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/comercio",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"comercio"
+					]
+				},
+				"description": "Request que devuelve todos los comercios"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/comercio/55581642-6\n",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/comercio/55581642-6",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"comercio",
+						"55581642-6"
+					]
+				},
+				"description": "Request que recibe un rut y devulve los datos de su respectivo comercio"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/ventas?monto=43243&dispositivo_id=4&comercio_rut=55581642-6",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo_seguridad\" : \"0000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/ventas?monto=43243&dispositivo_id=4&comercio_rut=55581642-6",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"ventas"
+					],
+					"query": [
+						{
+							"key": "monto",
+							"value": "43243"
+						},
+						{
+							"key": "dispositivo_id",
+							"value": "4"
+						},
+						{
+							"key": "comercio_rut",
+							"value": "55581642-6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/ventas/delete/12",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo_seguridad\"  :   \"0000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/ventas/delete/16",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"ventas",
+						"delete",
+						"16"
+					]
+				},
+				"description": "Request que recibe un id y codigo de seguridad para anular una venta"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/ventas/13",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/ventas/15",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"ventas",
+						"15"
+					]
+				},
+				"description": "Request que recibe un id y devuelve la Venta correspondiente"
+			},
+			"response": []
+		}
+	]
+}
