@@ -4,8 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Venta;
 use Illuminate\Routing\Controller;
-use Illuminate\Support\Facades\Crypt;
-use Illuminate\Contracts\Encryption\DecryptException;
 use Illuminate\Support\Facades\Hash;
 
 class VentaController extends Controller
@@ -38,7 +36,12 @@ class VentaController extends Controller
             return ['SUCCESS' => false, 'ERROR' => 'Venta no encontrada']; 
         }
         
-        return $venta;
+        return [
+            'venta_id'       => $venta->id,
+            'monto'          => $venta->monto,
+            'comercio'       => $venta->comercio_rut,
+            'dispositivo_id' => $venta->dispositivo_id
+        ];
     }
     
     public function destroy($id)

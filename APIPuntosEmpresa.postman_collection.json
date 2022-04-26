@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "63da331d-5e39-47d6-815e-ebe4ac121361",
-		"name": "APIHaulmerPuntos",
+		"name": "APIPuntosEmpresa",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -30,7 +30,7 @@
 			"response": []
 		},
 		{
-			"name": "http://127.0.0.1:8000/api/comercio/55581642-6\n",
+			"name": "http://127.0.0.1:8000/api/comercio/55581642-6",
 			"request": {
 				"method": "GET",
 				"header": [],
