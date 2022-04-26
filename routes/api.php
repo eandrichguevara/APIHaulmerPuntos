@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::post('ventas', VentaController::class.'@create')->name('ventas.create');
 Route::get('ventas/{id}', VentaController::class.'@show')->name('ventas.show');
-Route::post('ventas/delete/{id}', VentaController::class.'@destroy')->name('ventas.destroy');
+Route::delete('ventas/delete/{id}', VentaController::class.'@destroy')->name('ventas.destroy');
 
 Route::get('comercio', ComercioController::class.'@index')->name('comercio.index');
 Route::get('comercio/{rut}', ComercioController::class.'@show')->name('comercio.show');
