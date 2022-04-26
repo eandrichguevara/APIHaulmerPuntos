@@ -6,7 +6,7 @@
 </ul>
 
 <h2>Abrir XAMPP e iniciar Apache y MySql</h2>
-<h2>Crear una base de datos llamada <strong>apihaulmerpuntos</strong> en mysql</h2>
+<h2>Crear una base de datos llamada <strong>apipuntosempresa</strong> en mysql</h2>
 
 <h2>Clonar el proyecto</h2>
 
@@ -18,7 +18,7 @@
         <strong> cp .env.example .env </strong>
         <ul>
             <li>Este comando copia el archivo .env.example y le cambia el nombre a .env </li>
-            <li>Luego se deben modificar el valor de DB_DATABASE=apihaulmerpuntos </li>
+            <li>Luego se deben modificar el valor de DB_DATABASE=apipuntosempresa </li>
         </ul>
     </li>
     <li><strong> php artisan key:generate</strong></li>
@@ -27,4 +27,4 @@
     <li><strong> php artisan serve</strong></li>
 </ul>
 
-<h2>Importar la collecion APIHaulmerPuntos.postman_collection ubicada en la raiz del proyecto</h2>
+<h2>Importar la collecion APIPuntosEmpresa.postman_collection ubicada en la raiz del proyecto</h2>
